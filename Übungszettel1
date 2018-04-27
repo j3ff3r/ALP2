@@ -1,0 +1,27 @@
+#1.aufgabe
+def listProduct(x):
+    result=1
+    for i in x:
+        result*=i
+    return result
+
+#2.aufgabe
+def echtTeiler(n):
+    result=[]
+    for i in range(1,n):
+        if n%i==0:
+            result.append(i)
+    return result
+
+#3.aufgabe
+def listSum(x):
+    result=0
+    for i in x:
+        result+=i
+    return result
+
+def friends(a,b):
+    if listSum(echtTeiler(a)) == b and listSum(echtTeiler(b)) == a:
+        return True
+    else:
+        return False
